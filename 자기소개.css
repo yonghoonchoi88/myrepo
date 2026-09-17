@@ -1,0 +1,237 @@
+.tablebox{
+  height: 60px;
+  background-color: lightgreen;
+  border: salmon;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 12px 18px;   
+  vertical-align: middle;
+}
+.engname{
+  color: peru;
+  font-weight: bolder;
+}
+.questions{
+  background-color: pink;
+  color: purple;
+}
+.answers{
+  color: blue;
+}
+
+.outer{
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+}
+
+.outer>:nth-child(1){
+  border-bottom: 1px solid grey;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.intro{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  &>:nth-child(1){
+    font-size: 35px;
+    font-weight: 700;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+  }
+  &>:nth-child(2){
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    color:rgb(43, 160, 160)
+  }
+  &>:nth-child(3){
+    display: grid;
+    align-items: center;
+  }
+}
+
+.photo{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.content>:nth-child(1){
+  &>*{
+    border-right: 1px solid grey;
+  }
+  &>:nth-child(2){
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  &>:nth-child(1){
+    display: grid;
+    &>:nth-child(2){
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.content>:nth-child(1)>:nth-child(1){
+  grid-template-rows: 1fr 8fr;
+  grid-template-columns: 1fr;
+}
+
+.content>:nth-child(1)>:nth-child(2)>:nth-child(1){
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.skills_l{
+  color:rgb(43, 160, 160);
+  display: grid;
+  justify-content: top;
+  align-items: top;
+  font-size: 20px;
+  font-weight: 500;
+}
+.skills_s{
+  display: grid;
+  justify-content: start;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.lang{
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr;
+}
+.speaklan{
+  font-size: 20px;
+  font-weight: 450;
+  display: grid;
+  margin: 10px;
+  justify-content: start;
+  align-items: start; 
+}
+
+.percent{
+  font-size: 20px;
+  font-weight: 450;
+  display: grid;
+  margin: 10px;
+  justify-content: end;
+  align-items: start; 
+}
+
+.title{
+  font-size: 35px;
+  font-weight: 500;
+  display: grid;
+  justify-content: start;
+  align-items: start; 
+}
+
+.m1>:first-child{
+  width: 95%;    
+  height: 40px;
+  display: flex;
+  margin: auto;
+}
+
+.content>:nth-child(2){
+  &>:first-child{
+    border-bottom: 1px solid grey;
+  }
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.experience{
+  display: grid;
+  grid-template-rows: 1fr 18fr;
+  grid-template-columns: 1fr;
+  &>:nth-child(1){
+    border-bottom: 1px solid grey;
+  }
+  &>:nth-child(2){
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+
+  }
+  &>:nth-child(2)>:nth-child(1){
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  &>:nth-child(2)>:nth-child(2){
+    border-bottom: 1px solid grey;
+  }
+  &>:nth-child(2)>:nth-child(3){
+    border-right: 1px solid grey;
+  }
+  &>:nth-child(2)>:nth-child(5){
+    border-right: 1px solid grey;
+  }
+  &>:nth-child(2)>:nth-child(3){
+    border-bottom: 1px solid grey;
+  }
+  &>:nth-child(2)>:nth-child(4){
+    border-bottom: 1px solid grey;
+  }
+}
+
+.jobtitle{
+  color:rgb(43, 160, 160);
+  display: grid;
+
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.jobdes{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu{
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 1fr;
+  &>:nth-child(2){
+
+    &>:first-child{
+      color:rgb(43, 160, 160);
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
